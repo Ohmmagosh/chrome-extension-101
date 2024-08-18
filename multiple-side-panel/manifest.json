@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Multiple Side Panel",
+    "description": "Base Level Extensions Multiple Side Panel",
+    "version": "1.0",
+    "background": {
+        "service_worker": "service-worker.js"
+    },
+    "action": {
+        "default_title": "Click to open panel"
+    },
+    "icons": {
+        "16": "images/icon-16.png",
+        "48": "images/icon-48.png",
+        "128": "images/icon-128.png"
+    },
+    "permissions": [
+        "sidePanel"
+    ]
+}
