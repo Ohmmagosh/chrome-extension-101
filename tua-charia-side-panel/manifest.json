@@ -1,0 +1,21 @@
+{
+    "name": "Tua Charia Side Panel",
+    "description": "Base Level Extensions",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_title": "Click to open panel"
+    },
+    "side_panel": {
+        "default_path": "html/side-panel.html"
+    },
+    "background": {
+        "service_worker": "service-worker.js"
+    },
+    "permissions": [
+        "sidePanel"
+    ],
+    "icons": {
+        "16": "side-panel.png"
+    }
+}

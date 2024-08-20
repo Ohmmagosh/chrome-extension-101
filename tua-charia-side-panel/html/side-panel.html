@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TuaCharia Sidepanel</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="header">คำนวณราคาเฉลี่ยหุ้น</h1>
+      <form id="form-input">
+        <div class="container-fields card ">
+          <label for="current-quant" class="form-label">จำนวนหุ้นในปัจจุบัน</label>
+          <input
+            class="form-input"
+            type="number"
+            id="current-quant"
+            name="current-quant"
+            
+            min="0"
+            placeholder="จำนวนหุ้น"
+          />
+          <span id="current-quant-errors"></span>
+        </div>
+        <div class="container-fields card">
+          <label for="current-price-avg">ปัจจุบันมีราคาเฉลี่ย</label>
+          <input
+            class="form-input"
+            type="number"
+            id="current-price-avg"
+            name="current-price-avg"
+            min="0"
+            placeholder="ราคาหุ้น"
+          />
+          <span id="current-price-avg-errors"></span>
+        </div>
+        <div class="container-fields card">
+          <label for="quant-buy" class="form-label">จำนวนหุ้นที่ซื้อเพิ่ม</label>
+          <input
+            class="form-input"
+            type="number"
+            id="quant-buy"
+            name="quant-buy"
+            min="0"
+            placeholder="จำนวนหุ้นที่ซื้อเพิ่ม"
+          />
+          <span id="quant-buy-errors"></span>
+        </div>
+        <div class="container-fields card">
+          <label for="new-price" class="form-label">ราคาหุ้นที่ซื้อเพิ่ม </label>
+          <input
+            class="form-input"
+            type="number"
+            id="new-price"
+            name="new-price"
+            min="0"
+            placeholder="ราคาหุ้นที่ซื้อเพิ่ม"
+          />
+          <span id="new-price-errors"></span>
+        </div>
+        <div class="card">
+
+          <button type="submit">คำนวณ</button>
+        </div>
+      </form>
+      <div id="result"></div>
+    </div>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

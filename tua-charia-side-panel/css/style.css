@@ -1,0 +1,19 @@
+/* #form-input {
+    background-color: green;
+} */
+
+.header {
+    background-color: rgb(21, 101, 192);
+    text-align: center;
+    border: 1px solid green;
+    border-radius: 10px;
+    color: white;
+}
+
+.card {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
