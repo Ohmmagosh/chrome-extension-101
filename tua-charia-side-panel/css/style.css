@@ -1,7 +1,14 @@
 /* #form-input {
     background-color: green;
 } */
-
+.container-fields {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: start; */
+    align-items: center;
+    align-content: start;
+    padding: 1rem;
+}
 .header {
     background-color: rgb(21, 101, 192);
     text-align: center;

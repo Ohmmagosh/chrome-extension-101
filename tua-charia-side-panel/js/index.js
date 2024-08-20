@@ -21,7 +21,7 @@ document.getElementById("form-input").addEventListener("submit", function (e) {
     "new-price": newPrice,
   } = Object.fromEntries(new FormData(e.target).entries()));
   clearErrorMessages(data);
-
+  let valid = true;
   Object.keys(data).forEach((key) => {
     const errorObj = {
       "current-quant": "โปรดกรอกราคาปัจจุบัน",
@@ -33,10 +33,13 @@ document.getElementById("form-input").addEventListener("submit", function (e) {
     console.log(key, data[key]);
     if (data[key] === "" || parseFloat(data[key]) === 0) {
       showErrorMessages(`${key}-errors`, errorObj[key]);
+      valid = false;
       return;
     }
   });
-
+  if (!valid) {
+    return;
+  }
  
   currentQuant = parseFloat(currentQuant);
   currentPriceAvg = parseFloat(currentPriceAvg);
